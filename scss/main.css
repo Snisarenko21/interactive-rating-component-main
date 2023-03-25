@@ -1,0 +1,146 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  list-style: none;
+}
+
+ul,
+li {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.row-selection {
+  background-color: #121417;
+  padding: 30px;
+  border-radius: 10%;
+}
+
+.row-selection__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #252d37;
+  border: 1px solid #1b0303;
+  list-style-type: none;
+}
+
+.row-selection__icon:hover {
+  background-color: #7c8798;
+}
+
+.row-selection__title {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.row-selection__text {
+  color: #959eac;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.selection-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+}
+
+.selection-list__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.selection-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #959eac;
+  background-color: #252d37;
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.selection-list__link:hover {
+  background-color: #7c8798;
+}
+
+.selection-list__link:focus {
+  background-color: #fb7413;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  width: 100%;
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  display: block;
+  margin-top: 30px;
+  color: white;
+  background-color: #fb7413;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fb7413;
+  background-color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
