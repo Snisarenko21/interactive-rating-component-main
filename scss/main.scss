@@ -31,12 +31,12 @@ body {
 .container {
   max-width: 375px;
   margin: 0 auto;
-}
-
-.selection {
   background-color: hsl(216, 12%, 8%);
   padding: 30px;
   border-radius: 10%;
+}
+
+.selection {
 }
 
 .selection__icon {
@@ -124,6 +124,41 @@ body {
 .btn:focus {
   color: hsl(25, 97%, 53%);
   background-color: hsl(0, 0%, 100%);
+}
+
+//rating-box
+.result-box__icon {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.result-box {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.result-box__rating {
+  margin-top: 20px;
+  color: hsl(25, 97%, 53%);
+  text-align: center;
+}
+
+.result-box__title {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.result-box__text {
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  margin-top: 20px;
 }
 
 .attribution {
