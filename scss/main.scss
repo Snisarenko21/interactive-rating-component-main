@@ -105,7 +105,7 @@ body {
   background-color: hsl(25, 97%, 53%);
 }
 
-.btn {
+.js-btn {
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.2rem;
@@ -120,8 +120,8 @@ body {
   cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus {
+.js-btn:hover,
+.js-btn:focus {
   color: hsl(25, 97%, 53%);
   background-color: hsl(0, 0%, 100%);
 }

@@ -115,7 +115,7 @@ body {
   background-color: #fb7413;
 }
 
-.btn {
+.js-btn {
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.2rem;
@@ -130,8 +130,8 @@ body {
   cursor: pointer;
 }
 
-.btn:hover,
-.btn:focus {
+.js-btn:hover,
+.js-btn:focus {
   color: #fb7413;
   background-color: white;
 }
