@@ -25,36 +25,62 @@
 
   <body>
     <main>
-      <section class="card-container container">
-        <div class="selection">
-          <a href="#" class="selection__icon"
-            ><img src="./images/icon-star.svg" alt="" width="" height=""
-          /></a>
-          <h1 class="selection__title">How did we do?</h1>
-          <p class="selection__text">
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-          <div class="selection-list">
-            <a href="#" class="selection-list__link"
-              ><span class="number">1</span></a
+      <form class="form-container container">
+        <!-- <div class="raiting"> -->
+        <a href="#" class="raiting__icon"
+          ><img src="./images/icon-star.svg" alt="" width="" height=""
+        /></a>
+        <h1 class="raiting__title">How did we do?</h1>
+        <p class="raiting__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="raiting__body">
+          <div class="raiting__items">
+            <label
+              ><input
+                type="radio"
+                class="raiting__item"
+                name="radio"
+                value="1"
+              />1</label
             >
-            <a href="#" class="selection-list__link"
-              ><span class="number">2</span></a
+            <label
+              ><input
+                type="radio"
+                class="raiting__item"
+                name="radio"
+                value="2"
+              />2</label
             >
-            <a href="#" class="selection-list__link"
-              ><span class="number">3</span></a
+            <label
+              ><input
+                type="radio"
+                class="raiting__item"
+                name="radio"
+                value="3"
+              />3</label
             >
-            <a href="#" class="selection-list__link"
-              ><span class="number">4</span></a
+            <label
+              ><input
+                type="radio"
+                class="raiting__item"
+                name="radio"
+                value="4"
+              />4</label
             >
-            <a href="#" class="selection-list__link"
-              ><span class="number">5</span></a
+            <label
+              ><input
+                type="radio"
+                class="raiting__item"
+                name="radio"
+                value="5"
+              />5</label
             >
           </div>
-          <button class="js-btn" type="submit" onclick="foo()">SUBMIT</button>
+          <button class="js-btn" type="submit">SUBMIT</button>
         </div>
-      </section>
+      </form>
     </main>
 
     <footer class="attribution">

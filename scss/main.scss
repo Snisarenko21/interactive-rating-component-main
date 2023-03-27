@@ -36,10 +36,20 @@ body {
   border-radius: 10%;
 }
 
-.selection {
+.raiting {
+  // display: flex;
+  // align-items: center;
 }
 
-.selection__icon {
+// .raiting__body {
+//   position: relative;
+// }
+// .raiting__body::before {
+//   content: "raiting__items";
+//   display: block;
+// }
+
+.raiting__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,24 +67,56 @@ body {
   //   }
 }
 
-.selection__icon:hover {
+.raiting__icon:hover {
   background-color: hsl(216, 12%, 54%);
 }
 
-.selection__title {
+.raiting__title {
   color: hsl(0, 0%, 100%);
   font-size: 1.7rem;
   font-weight: 700;
   margin-top: 20px;
 }
 
-.selection__text {
+.raiting__text {
   color: hsl(217, 12%, 63%);
   font-weight: 400;
   margin-top: 20px;
 }
 
-.selection-list {
+.raiting__items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+
+  &__link:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.raiting__item {
+  // position: absolute;
+  // height: 100%;
+  // opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 18%);
+  text-decoration: none;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  appearance: none;
+}
+
+.raiting-list {
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
