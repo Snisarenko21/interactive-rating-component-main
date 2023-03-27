@@ -127,25 +127,37 @@ body {
 }
 
 //rating-box
-.result-box__icon {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .result-box {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
 }
-
+.result-box__icon {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .result-box__rating {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  padding: 1rem 1rem;
+  // justify-content: center;
+  // align-items: center;
+  // width: 150px;
+  // height: 44px;
+  // border-radius: 30%;
   margin-top: 20px;
   color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
   text-align: center;
 }
-
+.current {
+  padding-left: 10px;
+}
 .result-box__title {
   text-align: center;
   color: hsl(0, 0%, 100%);

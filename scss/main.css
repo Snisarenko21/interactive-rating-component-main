@@ -136,13 +136,6 @@ body {
   background-color: white;
 }
 
-.result-box__icon {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .result-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,10 +147,26 @@ body {
           justify-content: center;
 }
 
+.result-box__icon {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .result-box__rating {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  padding: 1rem 1rem;
   margin-top: 20px;
   color: #fb7413;
+  background-color: #252d37;
   text-align: center;
+}
+
+.current {
+  padding-left: 10px;
 }
 
 .result-box__title {
