@@ -1,4 +1,4 @@
-@mixin tablet {
+@mixin desctop {
   @media (min-width: 1280px) {
     @content;
   }
@@ -41,11 +41,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: hsl(216, 12%, 8%);
-  padding: 25px 30px 25px 25px;
+  padding: 25px 30px 25px 30px;
   border-radius: 5%;
 
-  @include tablet {
+  @include desctop {
     border-radius: 8%;
+    padding: 25px 25px 25px 25px;
   }
 }
 
@@ -77,6 +78,10 @@ body {
   color: hsl(217, 12%, 63%);
   font-weight: 400;
   margin-top: 20px;
+
+  @include desctop {
+    font-size: 14px;
+  }
 }
 
 .rating__items {
@@ -141,13 +146,6 @@ input[type="radio"] {
 
 //result-box
 
-// .result-box {
-//   max-width: 375px;
-//   display: flex;
-//   margin-left: auto;
-//   margin-right: auto;
-//   justify-content: center;
-// }
 .result-icon {
   display: block;
   text-align: center;
@@ -163,6 +161,10 @@ input[type="radio"] {
   color: hsl(25, 97%, 53%);
   background-color: hsl(213, 19%, 18%);
   text-align: center;
+
+  @include desctop {
+    font-size: 14px;
+  }
 }
 .result-current {
   padding-left: 5px;
@@ -180,6 +182,10 @@ input[type="radio"] {
   color: hsl(217, 12%, 63%);
   font-weight: 400;
   margin-top: 20px;
+
+  @include desctop {
+    font-size: 14px;
+  }
 }
 
 .attribution {
