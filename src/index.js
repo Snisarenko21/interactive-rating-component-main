@@ -20,7 +20,7 @@ function getFormResult() {
   
           <img class="result-icon"
             src="./images/illustration-thank-you.svg"
-            alt=""
+            alt="picture-message"
             width="162"
             height="108"
           />

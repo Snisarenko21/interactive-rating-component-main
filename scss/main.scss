@@ -1,5 +1,5 @@
 @mixin desctop {
-  @media (min-width: 1280px) {
+  @media (min-width: 1440px) {
     @content;
   }
 }
@@ -40,7 +40,8 @@ body {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  background-color: hsl(216, 12%, 8%);
+  background: linear-gradient(hsl(216, 12%, 8%), hsl(213, 19%, 18%));
+  // background-color: hsl(216, 12%, 8%);
   padding: 25px 30px 25px 30px;
   border-radius: 5%;
 

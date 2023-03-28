@@ -35,12 +35,13 @@ body {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #121417;
+  background: -webkit-gradient(linear, left top, left bottom, from(#121417), to(#252d37));
+  background: linear-gradient(#121417, #252d37);
   padding: 25px 30px 25px 30px;
   border-radius: 5%;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .container {
     border-radius: 8%;
     padding: 25px 25px 25px 25px;
@@ -83,7 +84,7 @@ body {
   margin-top: 20px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .rating__text {
     font-size: 14px;
   }
@@ -178,7 +179,7 @@ input[type="radio"] {
   text-align: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .result-box {
     font-size: 14px;
   }
@@ -203,7 +204,7 @@ input[type="radio"] {
   margin-top: 20px;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .result-text {
     font-size: 14px;
   }
