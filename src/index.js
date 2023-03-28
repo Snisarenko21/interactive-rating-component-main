@@ -1,15 +1,13 @@
-// import "../scss/main.css";
 const submitForm = document.querySelector("form");
 console.log(submitForm);
-// const submitBtn = document.querySelector(".js-btn");
-// const selectionLink = document.querySelector(".selection-list__link");
-// const currentRating = document.querySelector(".current");
 
 const handleClick = (event) => {
   if (event.target !== event.currentTarget) return;
   event.preventDefault();
   const value = event.target.elements.radio.value;
-  foo();
+
+  getFormResult();
+
   const currentRating = document.querySelector(".current");
   currentRating.innerHTML = `${value} out of 5`;
   console.log(currentRating);
@@ -17,7 +15,7 @@ const handleClick = (event) => {
 
 submitForm.addEventListener("submit", handleClick);
 
-function foo() {
+function getFormResult() {
   document.getElementsByTagName(
     "form"
   )[0].innerHTML = `<section class="thumb-container container">
@@ -29,7 +27,7 @@ function foo() {
             height="108"
           />
        
-    <div class="result-box__rating">You selected<span class="current"> out of 5</span></div>
+    <div class="result-box__rating">You selected<span class="current">out of 5</span></div>
           <h1 class="result-box__title">Thank you!</h1>
           <p class="result-box__text">
             We appreciate you taking the time to give a rating. If you ever need
@@ -39,15 +37,3 @@ function foo() {
 
       </section>`;
 }
-// const formData = new FormData(event.target);
-// console.dir(submitForm);
-// const value = document.querySelector('input[name="radio"]:checked').value;
-// console.log(value);
-/* <div class="result-box__rating"<p class="message">You selected</p><span class="current"><out of 5</span></div> */
-//    <input type="text" name="text" size="43">
-// const number = "",
-//   rating = 5; //Колличество звёзд
-// for (i = 0; i < rating; i++) number += "1";
-// document.getElementById("result-box__rating").innerHTML = number;
-
-// searchForm.addEventListener("click", handleClick);
