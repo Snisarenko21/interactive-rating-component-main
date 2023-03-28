@@ -36,11 +36,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #121417;
-  padding: 25px 25px 20px;
-  border-radius: 10%;
+  padding: 25px 30px 25px 25px;
+  border-radius: 5%;
 }
 
-.raiting__icon {
+@media (min-width: 1280px) {
+  .container {
+    border-radius: 8%;
+  }
+}
+
+.rating__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,20 +65,20 @@ body {
   list-style-type: none;
 }
 
-.raiting__title {
+.rating__title {
   color: white;
   font-size: 1.7rem;
   font-weight: 700;
   margin-top: 20px;
 }
 
-.raiting__text {
+.rating__text {
   color: #959eac;
   font-weight: 400;
   margin-top: 20px;
 }
 
-.raiting__items {
+.rating__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,11 +87,11 @@ body {
           justify-content: space-between;
 }
 
-.raiting__items__link:not(:last-child) {
+.rating__items__link:not(:last-child) {
   margin-right: 20px;
 }
 
-.raiting__item {
+.rating__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,15 +112,15 @@ body {
   cursor: pointer;
 }
 
-.raiting__item:hover {
+.rating__item:hover {
   background-color: #7c8798;
 }
 
-.raiting__item:focus {
+.rating__item:focus {
   background-color: #fb7413;
 }
 
-.raiting__number {
+.rating__number {
   position: absolute;
 }
 
@@ -145,25 +151,14 @@ input[type="radio"] {
   background-color: white;
 }
 
-.result-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.result-box__icon {
+.result-icon {
   display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-.result-box__rating {
+.result-box {
   display: inline-block;
   margin-left: 80px;
   border-radius: 30px;
@@ -174,11 +169,11 @@ input[type="radio"] {
   text-align: center;
 }
 
-.current {
+.result-current {
   padding-left: 5px;
 }
 
-.result-box__title {
+.result-title {
   text-align: center;
   color: white;
   font-size: 1.7rem;
@@ -186,7 +181,7 @@ input[type="radio"] {
   margin-top: 20px;
 }
 
-.result-box__text {
+.result-text {
   text-align: center;
   color: #959eac;
   font-weight: 400;

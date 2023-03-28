@@ -1,3 +1,9 @@
+@mixin tablet {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -35,11 +41,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: hsl(216, 12%, 8%);
-  padding: 25px 25px 20px;
-  border-radius: 10%;
+  padding: 25px 30px 25px 25px;
+  border-radius: 5%;
+
+  @include tablet {
+    border-radius: 8%;
+  }
 }
 
-.raiting__icon {
+.rating__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,24 +62,24 @@ body {
   list-style-type: none;
 }
 
-// .raiting__icon:hover {
+// .rating__icon:hover {
 //   background-color: hsl(216, 12%, 54%);
 // }
 
-.raiting__title {
+.rating__title {
   color: hsl(0, 0%, 100%);
   font-size: 1.7rem;
   font-weight: 700;
   margin-top: 20px;
 }
 
-.raiting__text {
+.rating__text {
   color: hsl(217, 12%, 63%);
   font-weight: 400;
   margin-top: 20px;
 }
 
-.raiting__items {
+.rating__items {
   display: flex;
   justify-content: space-between;
 
@@ -78,7 +88,7 @@ body {
   }
 }
 
-.raiting__item {
+.rating__item {
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -94,15 +104,15 @@ body {
   cursor: pointer;
 }
 
-.raiting__item:hover {
+.rating__item:hover {
   background-color: hsl(216, 12%, 54%);
 }
 
-.raiting__item:focus {
+.rating__item:focus {
   background-color: hsl(25, 97%, 53%);
 }
 
-.raiting__number {
+.rating__number {
   position: absolute;
 }
 
@@ -133,19 +143,20 @@ input[type="radio"] {
 
 //result-box
 
-.result-box {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-.result-box__icon {
+// .result-box {
+//   max-width: 375px;
+//   display: flex;
+//   margin-left: auto;
+//   margin-right: auto;
+//   justify-content: center;
+// }
+.result-icon {
   display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-.result-box__rating {
+.result-box {
   display: inline-block;
   margin-left: 80px;
   border-radius: 30px;
@@ -155,10 +166,10 @@ input[type="radio"] {
   background-color: hsl(213, 19%, 18%);
   text-align: center;
 }
-.current {
+.result-current {
   padding-left: 5px;
 }
-.result-box__title {
+.result-title {
   text-align: center;
   color: hsl(0, 0%, 100%);
   font-size: 1.7rem;
@@ -166,7 +177,7 @@ input[type="radio"] {
   margin-top: 20px;
 }
 
-.result-box__text {
+.result-text {
   text-align: center;
   color: hsl(217, 12%, 63%);
   font-weight: 400;
