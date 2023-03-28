@@ -26,13 +26,16 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
+  background-color: black;
 }
 
 .container {
   max-width: 375px;
-  margin: 0 auto;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: hsl(216, 12%, 8%);
-  padding: 20px 25px 20px;
+  padding: 25px 25px 20px;
   border-radius: 10%;
 }
 
@@ -174,6 +177,7 @@ input[type="radio"] {
   text-align: center;
   padding-bottom: 8px;
   margin-top: 20px;
+  color: hsl(217, 12%, 63%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

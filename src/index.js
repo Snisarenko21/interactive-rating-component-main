@@ -16,9 +16,7 @@ const handleClick = (event) => {
 submitForm.addEventListener("submit", handleClick);
 
 function getFormResult() {
-  document.getElementsByTagName(
-    "form"
-  )[0].innerHTML = `<section class="thumb-container container">
+  document.getElementsByTagName("form")[0].innerHTML = `
     <div class="result-box"></div>
           <img class="result-box__icon"
             src="./images/illustration-thank-you.svg"
@@ -33,7 +31,5 @@ function getFormResult() {
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
           </p>
-        </div>
-
-      </section>`;
+        </div>`;
 }
