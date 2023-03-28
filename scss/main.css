@@ -65,6 +65,10 @@ body {
   list-style-type: none;
 }
 
+.rating__icon:hover {
+  background-color: #7c8798;
+}
+
 .rating__title {
   color: white;
   font-size: 1.7rem;
@@ -85,10 +89,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.rating__items__link:not(:last-child) {
-  margin-right: 20px;
 }
 
 .rating__item {
@@ -113,11 +113,13 @@ body {
 }
 
 .rating__item:hover {
+  color: white;
   background-color: #7c8798;
 }
 
-.rating__item:focus {
-  background-color: #fb7413;
+.rating__item:focus-within {
+  color: white;
+  background: #fb7413;
 }
 
 .rating__number {

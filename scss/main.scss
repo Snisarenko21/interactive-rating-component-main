@@ -62,9 +62,9 @@ body {
   list-style-type: none;
 }
 
-// .rating__icon:hover {
-//   background-color: hsl(216, 12%, 54%);
-// }
+.rating__icon:hover {
+  background-color: hsl(216, 12%, 54%);
+}
 
 .rating__title {
   color: hsl(0, 0%, 100%);
@@ -82,10 +82,6 @@ body {
 .rating__items {
   display: flex;
   justify-content: space-between;
-
-  &__link:not(:last-child) {
-    margin-right: 20px;
-  }
 }
 
 .rating__item {
@@ -105,11 +101,13 @@ body {
 }
 
 .rating__item:hover {
+  color: hsl(0, 0%, 100%);
   background-color: hsl(216, 12%, 54%);
 }
 
-.rating__item:focus {
-  background-color: hsl(25, 97%, 53%);
+.rating__item:focus-within {
+  color: hsl(0, 0%, 100%);
+  background: hsl(25, 97%, 53%);
 }
 
 .rating__number {
